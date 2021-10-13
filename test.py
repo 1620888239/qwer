@@ -71,7 +71,6 @@ for epoch in range(100):
         loss.backward()
         optimizer.step()
         loss1 += loss.item()
-        # if i % 100 == 99:
         print('[Epoch %d, Batch %5d] loss: %.3f' %(epoch + 1, i + 1, loss1))
         loss1 = 0.0
 
