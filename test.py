@@ -60,7 +60,7 @@ criterion = nn.CrossEntropyLoss()
 optimizer = optim.SGD(net.parameters(), lr=0.001, momentum=0.9)
 
 print("Start Training...")
-for epoch in range(100):
+for epoch in range(50):
     loss1 = 0.0
     for i, data in enumerate(trainloader):
         inputs, labels = data
